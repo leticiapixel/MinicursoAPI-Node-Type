@@ -1,0 +1,30 @@
+Minicurso API RestFul - Nome.js e Typescript
+
+Diferença de ‘dependencies’ e ‘devDependecies’: devDependencies precisara apenas durante o período de desenvolvimento, no ambiente de produção não precisara.
+
+Arquitetura Rest separa front do Back
+
+Nesta arquitetura, um mesmo Back-end pode atender diversos front (seja web, mobile, etc.)
+
+Express -> microframework que gerencia as rotas, midlleware, requisições.. etc.
+
+Quando se usa o ‘return’ na resposta de um método, garante que nada mais será executado dentro daquele método a partir daquele ponto
+
+Npm install nodemon -D -> comando para instalar o nodemon. (-D instala como dep de desenvolvimento). Ferramenta para recarregar servidor sempre que for salva alguma nova alteração
+
+Nodemon src/index.js  -> comando para executar via ‘nodemon’ com recarregamento automático
+Obs: se não reconhecer comando ‘nodemon executar -> npx nodemon src/index.js
+
+Cada nova alteração do projeto q e salva, o nodemon monitora isso e restarta o servidor.
+
+Para criar scripts para facilitar os comandos -> no arquivo package.json em ‘scripts’e define por exemplo “start: “npx nodemon src/index.js”, ao invés de executar este comando (npx nodemon src/index.js) executa apenas npm start
+
+// Buscas com filtro
+http://localhost:3333/projects?title=Node&owner=aluisio
+-> método retornara o resultado que o titulo e node e o ‘’owner” e Aluisio
+
+npm install uuidv4  -> biblioteca para gerar id unico 
+
+
+
+ 
